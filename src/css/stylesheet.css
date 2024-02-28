@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+#home{
+    position: relative;
+    height: 100vh;
+}
+#home > header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#home > header > video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%,-50%);
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 4, 4, 0.76);
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+}
+
+
+.titulosHome{
+    width: 80vh;
+    height: 30vh;
+    z-index: 2;
+    position: absolute;
+    top: 30em;
+    margin-left: 12em;
+}
+.titulosHome > h2{
+    font-family: 'Slabo 27px', serif;
+    font-size: 5em;
+    align-items: center;
+}
+.color_1{
+    color: black;
+}
+.color_2{
+    color: white;
+}
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 7em;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.6s;
+    z-index: 3;
+}
+nav.abajo{
+    background: #a00000;   
+}
+nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav > ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav > ul > li > figure > img{
+    width: 90px;
+    height: 75px;
+    
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+    transition: 0.6s;
+}
+nav > ul > li > a.abajo{
+    color: white;
+}
+
+
+.contactHomeIcons{
+    position: absolute;
+    width: 15em;
+    height: 5em;
+    bottom: 0;
+    right: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.contactHomeIcons > a{
+    align-items: center;
+}
+.contactHomeIcons > a > i{
+    font-size: 1.5em;
+}
+
+
+#about > header{
+    margin-top: 5em;    
+}
+#about > header > h1{
+    position: relative;
+    margin-left: 1.8em;  
+    font-family: 'Creepster', cursive;
+    font-size: 7em;
+    color: black;
+}
+.introduction > p{
+    position: relative;
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    font-family: 'Slabo 27px', serif;
+    font-size: 2.5em;
+    color: black;
+    text-align: justify;
+}
+
+
+#about{
+    width: 100%;
+    height: auto;
+}
+.personajes{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 10em;
+}
+.personajes > div{
+    position: relative;
+    background-color: rgb(104, 104, 104);
+    border-radius: 2em;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: black;
+    width: 35em;
+    height: 50em;  
+    align-items: center;
+    
+}
+.personajes > div > div{
+    top: 0;
+    position: relative;
+    background-color: rgb(36, 70, 182);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    width: 34.6em;
+    height: 10em;  
+    
+}
+.personajes > div > h2{
+    position: absolute;
+    font-size: 5em;
+    font-family: 'Slabo 27px', serif;
+    color: black;
+    width: 100%;
+    text-align: center;
+    top: .5em;
+}
+.personajes > div > figure{
+    justify-content: space-around;
+    display: flex;
+}
+.personajes > div > figure > img{
+    position: relative;
+    align-items: center;
+    width: 20em;
+    height: 25em;
+
+}
+.personajes > div > p{
+    position: relative;
+    text-align: justify;
+    bottom: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 2em;
+    font-family: 'Slabo 27px', serif;
+    color: black;
+}
+
+#bottom{
+    height: auto;
+    width: 100%;
+    margin-top: 10em;
+}
+#bottom > div{
+    width: 100%;
+    height: 30em;
+    background-color: black;
+    
+}
+#bottom > div > h2{
+    position: relative;
+    top: .8em;
+    text-align: center;
+    font-size: 8em;
+    font-family: 'Creepster', cursive;
+    color: #a00000;
+}
+#bottom > div > div{
+    position: relative;
+    width: 100%;
+    height: 10em;
+    top: 8em;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#bottom > div > div > ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 30em;
+    height: 100%;
+}
+#bottom > div > div > ul > li{
+    position: relative;
+    align-items: center;
+    list-style: none;
+}
+#bottom > div > div > ul > li >div{
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-around;
+}
+#bottom > div > div > ul > li > div >a{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#bottom > div > div > ul > li > div >a > i{
+    position: relative;
+    font-size: 2em;
+    align-items: center;
+}
+
+
+
+@media  screen and (max-width: 800px){
+    
+    #home > header > video{
+        object-fit: contain;
+    }
+    nav > ul{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    nav > ul > li{
+        padding: 1rem;
+    }
+    nav > ul > li:first-child{
+        display: flex;
+    }
+    nav > ul > li:not(:first-child){
+        display: none;
+    }
+    nav:hover{
+        height: auto;
+    }
+    nav:hover > ul > li{
+        display: flex;
+    }   
+}
+
+@media screen and (max-width: 1100px){
+    #home{
+        min-width: 100vh;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .personajes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 10em;
+    }
+    .personajes > div{
+        margin: 1em;       
+    }
+
+    #about{
+       min-width: 100vh;
+    }
+    #about > header > h1{
+        font-size: 6em;
+    }
+    .introduction > p{
+        font-size: 1.5em;
+    }
+
+    #bottom > div{
+        min-width: 100vh;       
+    }
+
+}
